@@ -12,8 +12,9 @@ priority claim.
 
 ## Download and archive identity
 
-Download the ZIP asset from this repository's **Releases** page. Preserve
-the extracted directory structure. The original archive has:
+Download [Aletheion-MOP-Repro-2026-11-08.zip](Aletheion-MOP-Repro-2026-11-08.zip)
+from the repository root. On its GitHub file page, choose **Download raw file**.
+Preserve the extracted directory structure. The original archive has:
 
 - **893 ZIP entries**
 - **23,102,507 bytes**
