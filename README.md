@@ -63,3 +63,14 @@ graph reductions, matrix arguments, analytic tails, finite coverage and
 published input hypotheses remain necessary; a stored `PASS`, a checksum or
 a successful process alone does not establish them. Consult the mathematical
 manuscript and the complete source proofs when assessing those implications.
+
+## Manuscript and review materials
+
+- [Manuscript (PDF)](paper/positive_square_energy_mop.pdf)
+- [LaTeX source archive](paper/manuscript_source.zip)
+- [Detailed review report](review/Pruefbericht.txt)
+
+These files preserve the 8 November 2026 computer-assisted draft by
+Jonas J. Gebendorfer. The draft and AI-assisted checking do not constitute
+independent human peer review or a Lean formal proof. Publication here
+does not represent acceptance by formal-conjectures or formal proof status.

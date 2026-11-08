@@ -1,0 +1,269 @@
+UNABHÄNGIGE PRÜFUNG UND AUSFORMULIERUNG DER MOP-BEWEISFASSUNG
+8. November 2026
+
+Auftrag: Zuerst Elternextraktion und Rootball-/Lossless-Phasenbrücke
+unabhängig auf Lücken prüfen, Gegenbefunde genau verorten und daraus eine
+eigenständig reproduzierbare Einreichungsfassung erstellen.
+Autor des mathematischen Manuskripts: Jonas J. Gebendorfer.
+
+Ergebnis und Reichweite
+
+In der unabhängig hergeleiteten Elternextraktion, Rootball-Brücke,
+Lossless-Monotonie, C0-Übertragung und Retirement-Rechnung wurde kein fataler
+mathematischer Gegenbefund gefunden. Das bedeutet keine unabhängige
+menschliche Begutachtung oder Formalisierung. Die Prüfungen fanden in
+getrennten Arbeitsgängen innerhalb derselben KI-gestützten Umgebung statt.
+Geteilte ursprüngliche Arithmetikkerne sind bei Wiederholungen ausdrücklich
+ausgewiesen. Eine frische Teilprüfung ersetzt keine vollständige
+numerische Familienprüfung.
+
+Die zuvor gewählte Aussage bleibt unverändert:
+Für jeden endlichen einfachen maximal außenplanaren Einheitsgraphen G mit
+n>=8 gilt splus(G)>=2n, äquivalent splus(G)-sminus(G)>=6.
+Es wurde kein Wechsel zu einer Hilfsaussage als Abschluss ausgegeben.
+Die selbständige Prüfung eines veröffentlichten externen Theorems wird
+auch nicht behauptet: Die drei genau bezeichneten Primärarbeiten liefern
+die im Manuskript explizit zitierten externen Voraussetzungen.
+
+Alle unten angegebenen relativen Pfade beziehen sich auf den gemeinsamen
+Arbeitsordner. Die ursprünglichen angenommenen Quellen und Zertifikate
+wurden nicht verändert. Reparaturen betreffen neue Dateien unter
+output/paper/ und work/mop-independent-review-20261108/.
+
+BEFUNDE AN DER FRÜHEREN FASSUNG
+
+E01 — Kinder und ganze Verzweigungskappe verwechselt.
+Fundstelle: work/mop-global-closure-20261108/global-proof.md:145-147.
+Wörtlich: „Ihre beiden Kinder haben die gerade bewiesene Darstellung
+E_(p,q),p,q>=1“.
+Jedes Kind ist ein gerader Fächer. Erst X zusammen mit seinen beiden
+Kindern bildet E_(p,q). Die frühere Elternquelle formuliert es bereits
+korrekt: work/mop-parent-extraction-20261108/parent-extraction-proof.md:21-23.
+Reparatur: explizite Definitionen der Kappen und vollständiger
+Tiefste-Eltern-Satz im neuen Manuskript. Ein Notationsfehler, kein
+gefundener geometrischer Gegenbeweis gegen den beabsichtigten Schluss.
+Der allgemeine Beweis behandelt die unäre Form, beide Geschwisterrollen
+und die Doppelkindform mit allen unabhängig positiven Längen.
+
+E02 — Erster Knick nur als Skizze formuliert.
+Fundstellen: global-proof.md:88-99 und
+work/mop-global-input-audit-20261108/normalization-shortcut-proof.md:40-56.
+Die Kurzfassung erklärt nicht vollständig die Mehrdeutigkeit eines
+einzelnen Dreiecks, den ersten echten Knick ab L=3, die induzierte private
+Fächeradjazenz und die genau drei Außenkontakte. Diese Argumente sind nun
+für beliebige L ausgeschrieben. Eine ganze duale Pfadstruktur erhält keine
+unzulässige Kleiner-Graph-Induktionsannahme; ihr ganzer Graph wird separat
+bezahlt. Kein Gegenbeispiel zur vorgesehenen Orientierung gefunden.
+
+E03 — P bezeichnet zwei verschiedene Objekte.
+Fundstellen: global-proof.md:104 gegenüber :151 und :188.
+Eine gewöhnliche private Pfadadjazenz und eine wurzelbezogene Fächerkappe
+dürfen nicht gleichgesetzt werden. Im neuen Paper heißen sie P_k und
+mathsf P_ell. Insbesondere c join(P_p disjoint P_q) ist nicht selbst ein
+maximal außenplanarer Graph; Minimalität wird auf ihn nicht angewandt.
+
+E04 — Übertragung der C0-Spitzen zu knapp.
+Fundstellen: global-proof.md:179-184,202-207 sowie
+normalization-shortcut-proof.md:74-79,124-128.
+Nun sind die beiden gelöschten Vertices, die geordnete Doppelkontaktwurzel,
+die erhaltenen Wurzelgrade, der eine alte gemeinsame Nachbar und die
+Abgeschlossenheit explizit. Die rechte innere Fächerorientierung wird
+zusammen mit den alten Wurzeln gespiegelt. Ein nur nach Gradprofil oder
+Vertexzahl gewähltes Objekt wäre nicht dieselbe Operation.
+
+E05 — Unterschied zwischen Gegenbeispielausschluss und universellem Zuwachs.
+Fundstellen: parent-extraction-proof.md:78-82 und global-proof.md:179-184,
+238-245. Die tatsächlich benutzte schwächere Aussage ist ausreichend:
+einige unäre Parameter werden durch eine bezahlte C0-Spitze oder Fan19
+ausgeschlossen. Daraus folgt kein universeller ganzer unärer Zuwachs für
+alle q an beliebigem alten H. Das Paper erhält diese Unterscheidung.
+Alte Reste der Ordnung 2..7 werden über eine Dominationsmenge des GANZEN
+Graphen behandelt, nicht mittels einer falschen 2|H|-Annahme auf K2..7.
+
+P01 — Angegebenes Phasenbeispiel verletzt seine eigene Kopplung.
+Fundstellen: work/mop-net-phase-20261106/net-phase-proof.md:210-212 und
+checks.py:45.
+Wörtlich: „with A=(3+4i)I and the sharp singular values3/5,4/5 has lifted
+phase>pi“.
+Aus A=I+cL und W=rho L A^-1 folgt bei skalarem A auch skalares L und W;
+die beiden Singularwerte sind daher gleich. Das alte Beispiel ist nur als
+ungekoppelter Test der Phasenaddition zulässig, nicht als ein gemeinsam
+zulässiges Rootball-Tripel.
+Exakte Reparatur: t=1,K=[[2,1],[1,2]], F=4iK,
+H=((1+i)/2)K^-1. Dann gilt die Rootball-Gleichheit, A=(3+4i)I, BEIDE
+quadrierten Singularwerte sind 4/5 und det(I+HF)=-3-4i. Die stetig
+gehobene Phase ist 2pi-2atan(2)>pi, während das Hauptargument negativ ist.
+Es handelt sich um ein algebraisches Beispiel im erweiterten Ball, nicht
+um behauptete Antworten eines endlichen tatsächlichen MOP.
+Die universellen Phasen- und Lossless-Beweise benutzen das alte falsche
+gekoppelte Beispiel nicht als Voraussetzung.
+
+P02 — Sektorzugehörigkeit allein liefert keinen integrierbaren Tail.
+Fundstellen der zu trennenden Bereiche:
+work/mop-fork-fan-20261106/fork-fan-proof.md:164-192 und
+net-phase-proof.md:155-160.
+Für gamma>0 hat F(t)=-gamma K/(t+2i) exakt Wplus(F)=0, aber
+b(F,t)=4atan(gamma/(2t)); somit geht t*b gegen 2gamma und sein Integral
+divergiert. Dies widerlegt eine unzulässige Verallgemeinerung auf alle
+Sektorantworten. Die richtig eingeschränkte ursprüngliche Aussage über
+physische endliche B,T wird dadurch nicht widerlegt.
+Das neue Paper verlangt für jede normalisierte Familie ihren vollständigen
+eigenen vorzeichenbehafteten Tail, einschließlich z=0 bei z=1/t.
+
+R01 — Der globale alte Leser ist kein portabler mathematischer Verifier.
+Fundstelle: work/mop-global-input-audit-20261108/
+read_global_completion_inputs.py:11-20,27,40.
+Er liest absolute Originalpfade, Statusbelege und die lokale SQLite-DB.
+Der isolierte Zugriffstest repro_test_isolation.py weist dies tatsächlich
+nach. Die neue Distribution verwendet relative extrahierte Quellen und
+keine Aletheion-Datenbank für mathematische Akzeptanz.
+
+R02 — Grammatik-Replay und numerischer Replay sind verschiedene Prüfungen.
+Fundstelle: work/mop-double-eigen-tail-20261108/read_selected36.py:35,
+43,46,51,52,58.
+Der Null-Callback prüft die vollständige Grammatik, nicht erneut die
+284102 numerischen kompakten Blätter. Diese Wiederverwendung ist in der
+ursprünglichen Quelle ausdrücklich ausgewiesen; sie wird nicht als
+Verschleierung dargestellt. Die 3584 vollständigen Tailintervalle und
+28 Schlussbudgets sind eine andere tatsächlich neu berechenbare Pflicht.
+Die neuen Vollbefehle verwenden die echten numerischen Schranken für
+alle 36 Abschnitte, einschließlich des alten Preflight-Abschnitts 23.
+Ein --smoke-Aufruf trägt ausdrücklich keinen Familientheoremstatus.
+
+R03 — Der finite Abschlussstatus akzeptiert fehlende Elternbelege.
+Fundstelle: work/mop-finite-assembly-20261108/read_finite_assembly.py:37,90.
+Der alte Leser setzt bei fehlender Datei PENDING_NATIVE_READBACK und läuft
+weiter; sein PASS hängt dann nur von mask_complete ab.
+Realer Gegenversuch: repro_finite_gate_counter.json enthält Exitcode0,
+alle 11885 Tupel und den vollen finite-PASS, obwohl ALLE VIER Elternbelege
+fehlen. Das ist ein Fehler des Vollständigkeitsprädikats. Die ursprünglich
+abgeschlossenen Eltern waren tatsächlich vorhanden; B71 wird hierdurch
+nicht widerlegt. Der neue Zusammenbau verlangt die tatsächlichen frischen
+mathematischen Teilresultate und lehnt fehlende Eingaben ab. Kontrollbelege
+und der vollständige alte Gegenversuch liegen im Supplement.
+
+R04 — Frühere Inventare schließen transitive Abhängigkeiten nicht ab.
+Fundstellen: read_global_completion_inputs.py:11-13;
+work/mop-serial-turns-20261105/turn_metric_interval.py:6-8;
+die in repro-review.md einzeln bezeichneten finiten und Bare-Branch-Quellen.
+Zu den ursprünglichen 409 Pfaden und acht TypeB-Ergänzungen kamen echte
+Importhelfer, zusätzliche Laufzeiteingaben, vollständige 190er-Kerne,
+die 288 quantitativen Jets und die 144 normalisierten Vorzeichenjets hinzu.
+Eine Hashliste ersetzt diese Quellen nicht. Die neue Distribution bewahrt
+explizite relative Mitglieder, ihre vollständigen Bytes und Bytehashes.
+Gleiche Bytes an zwei nötigen Importpfaden bleiben an beiden Pfaden erhalten.
+Ein zusätzlicher direkter Abgleich der 190er Restmengen 21/62 verstärkt die
+Nachvollziehbarkeit; er wird nicht als bewiesene alte mathematische Lücke
+ausgegeben, da die ursprünglichen gepaarten Leser die Abdeckung gemeinsam
+bereits implizieren.
+
+BEFUNDE AM NEUEN ENTWURF, VOR DER AUSLIEFERUNG REPARIERT
+
+D01 — Eine zu kurze Herleitung der scharfen Low-Phase-Schranke.
+Fundstelle der geprüften Entwurfsfassung: branch_section.tex, Absatz
+„For the whole low interval“, dokumentiert in paper_review_notes.md.
+Zwei Sektorbedingungen allein liefern die benötigte 2atan(2/t)-Schranke
+nicht. Zusätzlich ist Im F_*<=0 nötig.
+Reparatur: vollständiger allindizierter Erzeugendenfunktions- und
+144-Matrixpolynom-Jet-Beweis mit 924 PSD-Koeffizienten sowie das
+Inertia-Argument m+r<=2. Die frühere richtige Quelle ist
+work/mop-normalized-sign-20261105/normalized-sign-proof.md, Abschnitt 5.
+Dieser Satz war ein nachzuliefernder tragender Abhängigkeitsknoten, kein
+neu gefundener Gegenbeweis gegen den tatsächlich vollständigen alten Satz.
+
+D02 — Leere Polygonlücken in einer Kontaktgleichung.
+Fundstelle der geprüften Entwurfsfassung: finite_section.tex:46-58.
+„Ein gemeinsamer Vertex“ und S_i=r+s gelten nur für positive Lücken;
+bei m=0 ist S_i=0. Das wurde ausdrücklich korrigiert. Die benutzte
+Gesamtabschätzung S<=k+3ell bleibt richtig.
+
+D03 — Gradstufe und exakte endliche Schleifen präzisieren.
+Fundstellen der geprüften Entwurfsfassung: finite_section.tex:71-74 und
+dp_section.tex; Einzelheiten in extraction_finite_paper_review.txt.
+Die Ear-Induktion wird nun mit den alten Graden an einer alten Randkante
+geschrieben. Ebenso explizit sind Polygongrößen 2..K+2, genau d-1
+Lückenschritte, alle Endgradzustände, die Existenz der geteilten
+Nachbarallokation und die vollständige HighPair-Kernel-Entscheidungstabelle.
+Dies beseitigt Ausformulierungs- und Implementationsmehrdeutigkeiten.
+Die Nachhergrad-Konvention hätte die frühere Ear-Schranke ebenfalls
+begründet; sie wird nicht als widerlegter alter Satz ausgegeben.
+
+D04 — Literaldefinition, Optimierungsschutz und Satzfehler.
+Fundstellen der geprüften Entwurfsfassungen: payments_section.tex:120-123
+(Bowtie), finite_section.tex:273-275 und payments_section.tex:811
+(quad-Backslashes). Die konkreten -O-Gegenkontrollen und betroffenen
+Treiber stehen in repro_optimization_negative_control.json und
+phase_assertion_guard_checks.json; ihre Normalmodus-Nachweise sind
+separat erhalten.
+Die vier Hubkanten der Bowtie wurden explizit benannt; die angegebene
+Spektralrechnung gilt für diesen vollständigen Graphen. Fehlende
+LaTeX-Backslashes vor quad wurden korrigiert. Die neuen portablen Treiber
+lehnen Python -O durch einen ausdrücklichen if-not-__debug__-Fehler ab;
+ein bloßes assert __debug__ wäre unter -O selbst deaktiviert.
+Die alten unveränderten Validatoren werden mit aktivierten Prüfungen
+ausgeführt. Diese Schutzpräzisierung ist kein Energiegegenbeispiel.
+
+D05 — Eigener Metadatenhash mit falscher Bytebedeutung.
+Fundstelle: work/mop-independent-review-20261108/
+prepare_review_corrections.py:43, Berechnung des provenance.sha256 aus
+evidence.encode() nach write_text(evidence). Unter Windows hat write_text
+CRLF-Bytes geschrieben; die Berechnung verwendete den LF-normalisierten
+UTF8-Text. Der gespeicherte Wert
+40d39709a9b8c9a5436be9fec2abf36cd99ee847b7c38063716e60f040808666
+bezeichnet den normalisierten Text. Die tatsächliche unveränderte Datei
+correction-evidence.txt hat 2653 Bytes und den Rohdateihash
+22589af51d47505616faccea2a88741c35804b5de034b88b85bbc997d915a905.
+Der vollständige gespeicherte Quellumschlag enthielt bereits die richtigen
+Rohbytes und deren richtigen Hash. Die mathematischen Korrekturaussagen
+und ihre drei Revisionsbindungen bleiben unberührt. Eine zusätzliche
+kuratierte native Qualifikation bezeichnet die beiden Hashbedeutungen
+ausdrücklich und ist mit allen sieben betroffenen Einträgen verbunden.
+Originaldatei und ursprüngliche Metadaten bleiben nachvollziehbar erhalten.
+Die später mit -O-Schutz ergänzten lokalen Phasenprüfer sind eigene
+Nachfolgeversionen; frühere Ausführung wird ihnen nicht zugeschrieben.
+
+D06 — Zählformulierung der zusätzlichen Gegenobjektsuche.
+Fundstelle: reproduction_section.tex:198-200 des geprüften neuen Entwurfs,
+Absatz über 522 Starts.
+522 ist die Gesamtzahl: 517 Starts bei den acht benannten großen Ordnungen
+und fünf Kleinkontrollen. Die endgültige Fassung benennt diese Aufteilung.
+220931 Eigenwertlösungen und 138860 Flipbewertungen sind Operationen,
+keine Anzahl verschiedener Graphen und keine vollständige Enumeration.
+
+TATSÄCHLICH ABGESCHLOSSENE NEURECHNUNGEN
+
+Die vollständige maskierte dynamische Optimierung wurde mit Exitcode 0
+nach 2331,39 Sekunden beobachtet: alle 130 Ziele, 29 Gruppen, auch die
+31/31-Vorprüfung neu berechnet. Der anschließende neue mathematische
+Zusammenbau prüfte alle 11885 Hochgradtupel und 29 Niedriggradordnungen
+aus den neuen Teilresultaten. Alle fünf Einzelauslassungen sowie das
+veränderte tatsächliche Maximum wurden abgewiesen. Die 328 positiven
+Ziele waren zuvor vollständig neu berechnet worden. Weitere vollständige
+neue Rechnungen und die Grenzen der kompakten Smoke-Prüfungen stehen im
+Reproduktionsteil des Papers und im README des Supplements.
+
+Die zusätzliche begrenzte Gegenobjektsuche fand keinen Kandidaten unter
+2n. Sie ist keine allumfassende Aussage. Für den aufbewahrten besten
+großen Graphen mit n=72 liefert ein unabhängiger Ganzzahl-Gram-Zeuge
+splus(G)-144 >= 423972407978449381/36028797018963968 > 0.
+
+VOLLSTÄNDIGE EINZELBEFUNDE UND PRÜFARTEFAKTE
+
+work/mop-independent-review-20261108/extraction-review.md/.json
+work/mop-independent-review-20261108/phase-review.md
+work/mop-independent-review-20261108/paper_review_notes.md
+work/mop-independent-review-20261108/extraction_finite_paper_review.txt
+work/mop-independent-review-20261108/repro-review.md
+
+Diese Originalberichte enthalten weitere genaue Quellenzeilen,
+Prüfgrenzen und berichtete Ausführungsbelege. Das Paper selbst enthält
+die vollständigen allgemeingültigen Herleitungen und die Semantik der
+endlichen Zertifikate. README und Manifest des Supplements bestimmen die
+genauen mitgelieferten Bytes, Aufrufwege und tatsächlich wiederholten
+Prüfungen. Die aufwendigen privaten und doppelten kompakten Familien
+werden nicht als frisch vollständig wiederholt ausgegeben, wenn nur
+ihre unveränderten vollständigen Originalbeweise und echten
+Voll-Replay-Befehle vorliegen.
+
+Der abschließende Ausführungs- und Aletheion-Rückführungsstand steht in
+work/mop-independent-review-20261108/final_evidence_index.json.
